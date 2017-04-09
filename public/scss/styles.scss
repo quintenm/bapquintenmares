@@ -1,0 +1,18 @@
+@import "var";
+@import "reset";
+@import "default";
+
+body.vjs-full-window .player_wrapper{
+    position: static;
+}
+.player_container{
+    padding-top: 56.25%;
+}
+
+#videojs-panorama-player{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
