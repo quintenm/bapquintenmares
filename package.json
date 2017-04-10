@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "heroku-prebuild": "npm install",
-    "start": "node server.js"
+    "start": "node server.js",
+    "hidden:script": "./hiddenscript"
   },
   "keywords": [
     "360",
@@ -19,9 +20,9 @@
   "author": "Quinten Mares",
   "license": "SEE LICENSE IN licentie.txt",
   "dependencies": {
-    "videojs-panorama": "^0.1.5",
     "express": "^4.14.0",
-    "socket.io": "^1.5.1"
+    "socket.io": "^1.5.1",
+    "videojs-panorama": "^0.1.5"
   },
   "devDependencies": {},
   "repository": {

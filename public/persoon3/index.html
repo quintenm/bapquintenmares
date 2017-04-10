@@ -2,12 +2,28 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>BAP</title>
+    <title>BAP — detailpagina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/video-js.min.css" rel="stylesheet">
-    <link href="../css/videojs_panorama.min.css" rel="stylesheet">
-    <link href="../css/styles.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="text/javascript" src="../js/ext/sjcl.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+      var input = document.getElementById("password").focus();
+    }
+    function doDecrypt() {
+        var data = '{iv:"yC61FwXBnIR9yzYaEdq29w",salt:"d7vfdug0FFw",ct:"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"}';
+        var html = sjcl.decrypt(document.getElementById('password').value, data);
+
+        while (document.body.firstChild)
+            document.body.removeChild(document.body.firstChild);
+        document.write(html);
+
+    }
+    </script>
+
+
 </head>
 <body>
   <header>
@@ -20,42 +36,18 @@
     <div class="content">
       <div class="text">
         <div class="content-text">
-          <h4>Magriet</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam ipsam molestiae magni maxime, autem deserunt quos suscipit ullam beatae aperiam consequatur consequuntur. Accusantium ullam ducimus ipsum! Placeat quas, cumque.</p>
+          <p>Deze pagina is op vraag gecodeerd. Gelieve een correct wachtwoord in te geven,<br>om de inhoud hiervan te bekijken.</p>
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="content">
-      <div class="video">
-        <div class="player_wrapper">
-            <div class="player_container">
-                <video id="videojs-panorama-player" class="video-js vjs-default-skin" poster="../assets/poster.jpg"  crossorigin="anonymous" controls>
-                    <source src="../assets/redbull.mp4" type='video/mp4'>
-                </video>
-            </div>
-        </div>
-      </div>
-      <div class="text">
-        <div class="content-text">
-          <h4>lorem ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio cumque architecto aperiam, soluta, fugit, pariatur asperiores sunt sed labore eveniet minima atque ipsum iure! Quia natus praesentium veniam aperiam eius.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="content">
-      <div class="video">
-        <img src="../assets/poster.jpg">
-      </div>
-      <div class="text">
-        <div class="content-text">
-          <h4>lorem ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio cumque architecto aperiam, soluta, fugit, pariatur asperiores sunt sed labore eveniet minima atque ipsum iure! Quia natus praesentium veniam aperiam eius.</p>
-        </div>
-      </div>
+    <div class="content password">
+      <form id="form" onsubmit="event.preventDefault();doDecrypt();">
+        <input type="password" name="password" id="password" placeholder="wachtwoord">
+        <button type="submit" form="form" onclick="doDecrypt();"><i class='fa fa-unlock' aria-hidden="true"></i></button>
+      </form>
+
     </div>
   </section>
   <footer>
@@ -63,12 +55,6 @@
       <h4>Quinten Mares © 2016 - 2017</h4>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="../js/socket.min.js"></script>
-  <script src="../js/video.min.js"></script>
-  <script src="../js/three.min.js"></script>
-  <script src="../js/videojs-panorama.v5.js"></script>
-  <script src="../js/main.min.js" charset="utf-8"></script>
 </body>
 </html>
+

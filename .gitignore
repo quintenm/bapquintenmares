@@ -82,3 +82,12 @@ typings/
 
 # dotenv environment variables file
 .env
+
+#generate secure
+hiddenscript
+template.html
+dumbcrypt.js
+#index_origineel
+public/persoon1/index_origineel.html
+public/persoon2/index_origineel.html
+public/persoon3/index_origineel.html

@@ -73,6 +73,24 @@ section
           text-align: left;
         }
       }
+      &.password
+      {
+        justify-content: center;
+        button
+        {
+          padding:20px;
+          border:none;
+          border-radius: 0;
+          font-size: 1.5em;
+          background-color:$default_background_color_primary;
+          color:$default_text_color_primary;
+        }
+        input
+        {
+          padding:20px;
+          font-size: 1.5em;
+        }
+      }
     }
   }
   &:nth-of-type(2n+3)//odd accept 1

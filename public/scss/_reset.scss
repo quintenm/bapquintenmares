@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1.4; }
 
 ol, ul {
   list-style: none; }
@@ -52,12 +52,12 @@ p { display: inline-block; }
 * html p { height: 1%; }
 p { display: block; }
 /* close commented backslash hack */
-button,video,canvas,
+button,video,canvas,input
 {
-  &,*
+  &,*,:active,:hover,:focus
   {
     outline: none;
-  } 
+  }
 }
 a
 {
