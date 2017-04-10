@@ -83,6 +83,9 @@ typings/
 # dotenv environment variables file
 .env
 
+#scss
+scss/
+
 #generate secure
 hiddenscript
 template.html
