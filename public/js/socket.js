@@ -20,7 +20,7 @@ $(function() {
         var position = player.currentTime() - 10;
         player.currentTime(position);
       }else if(msg =='reposition'){
-
+        console.log('reposition');
       }else if(msg =='fullscreen'){
         if (!player.isFullscreen()) {
             //set to fullscreen
