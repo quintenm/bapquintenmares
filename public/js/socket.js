@@ -20,6 +20,9 @@ $(function() {
         var position = player.currentTime() - 10;
         player.currentTime(position);
       }else if(msg =='reposition'){
+        var canvas = player.getChild('canvas');
+        canvas.lat = 0;
+        canvas.lon = 0;
         console.log('reposition');
       }else if(msg =='fullscreen'){
         if (!player.isFullscreen()) {
